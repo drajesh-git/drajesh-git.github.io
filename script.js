@@ -53,9 +53,7 @@ window.addEventListener('scroll', () => {
 const ctaButton = document.querySelector('.cta-button');
 if (ctaButton) {
     ctaButton.addEventListener('click', () => {
-        alert('Thank you for your interest! Subscribe to the channel on YouTube.');
-        // You can replace this with actual subscribe link
-        // window.open('https://www.youtube.com/@yourchannel', '_blank');
+        window.open('https://www.youtube.com/@HimaRajVlogs', '_blank');
     });
 }
 
@@ -156,4 +154,4 @@ socialLinks.forEach(link => {
     });
 });
 
-console.log('TechVlogs page loaded successfully!');
+console.log('HimaRaj Vlogs - Food Channel loaded successfully!');

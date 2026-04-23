@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechVlogs - Welcome to My Channel</title>
+    <title>HimaRaj Vlogs - Delicious Indian Recipes</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,12 +12,13 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-play-circle"></i>
-                <span>TechVlogs</span>
+                <i class="fas fa-utensils"></i>
+                <span>HimaRaj Vlogs</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#videos" class="nav-link">Recipes</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -33,36 +34,79 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Welcome to TechVlogs</h1>
-                <p>Exploring the latest in technology, tutorials, and digital innovation</p>
-                <button class="cta-button">Subscribe Now</button>
+                <h1>Welcome to HimaRaj Vlogs</h1>
+                <p>Authentic Indian Recipes, Street Food, and Culinary Delights</p>
+                <button class="cta-button">Subscribe on YouTube</button>
             </div>
             <div class="hero-image">
-                <img src="https://via.placeholder.com/400x300?text=Vlogger+Channel" alt="TechVlogs Hero">
+                <img src="https://via.placeholder.com/400x300?text=Indian+Recipes" alt="HimaRaj Vlogs Hero">
             </div>
         </div>
     </section>
 
-    <!-- Featured Video Section -->
+    <!-- Recipe Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Recipe Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-bowlWithSpoon"></i>
+                    <h3>Curries & Gravies</h3>
+                    <p>Traditional Indian curries with rich flavors</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-bread"></i>
+                    <h3>Breads & Flatbreads</h3>
+                    <p>Naan, Roti, Paratha, and more</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Street Food</h3>
+                    <p>Popular Indian street food recipes</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-cake"></i>
+                    <h3>Desserts & Sweets</h3>
+                    <p>Traditional Indian sweets and desserts</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Vegetarian</h3>
+                    <p>Delicious meat-free recipes</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <h3>Non-Vegetarian</h3>
+                    <p>Chicken, meat, and seafood dishes</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="featured">
         <div class="container">
-            <h2>Featured Video</h2>
+            <h2>Featured Recipe</h2>
             <div class="featured-content">
                 <div class="featured-video">
                     <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                            title="Featured Video" frameborder="0" 
+                            title="Featured Recipe" frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
                 </div>
                 <div class="featured-info">
-                    <h3>Latest Technology Trends 2026</h3>
+                    <h3>Butter Chicken Masala - A Classic Indian Delicacy</h3>
                     <p class="date"><i class="fas fa-calendar"></i> April 23, 2026</p>
-                    <p>Join me as I dive deep into the most exciting technology trends shaping 2026. 
-                       From AI innovations to web development breakthroughs, we'll explore it all in this 
-                       comprehensive guide.</p>
+                    <p class="category"><i class="fas fa-tag"></i> Curries & Gravies</p>
+                    <p>Learn how to prepare the most popular Indian curry - Butter Chicken Masala. 
+                       This creamy, flavorful dish is perfect for dinner parties and special occasions. 
+                       I'll share my family recipe with step-by-step instructions.</p>
+                    <div class="recipe-details">
+                        <span><i class="fas fa-clock"></i> 45 mins</span>
+                        <span><i class="fas fa-users"></i> Serves 4</span>
+                        <span><i class="fas fa-fire"></i> Medium Spice</span>
+                    </div>
                     <div class="stats">
-                        <span><i class="fas fa-eye"></i> 25.5K Views</span>
-                        <span><i class="fas fa-thumbs-up"></i> 1.2K Likes</span>
+                        <span><i class="fas fa-eye"></i> 125K Views</span>
+                        <span><i class="fas fa-thumbs-up"></i> 8.5K Likes</span>
                     </div>
                 </div>
             </div>
@@ -72,118 +116,124 @@
     <!-- Video Grid Section -->
     <section class="videos-section" id="videos">
         <div class="container">
-            <h2>Latest Videos</h2>
+            <h2>Latest Recipes</h2>
             <div class="video-grid">
                 <div class="video-card">
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/300x170?text=Web+Dev" alt="Web Development">
-                        <span class="duration">12:45</span>
+                        <img src="https://via.placeholder.com/300x170?text=Paneer+Tikka" alt="Paneer Tikka">
+                        <span class="duration">15:30</span>
                         <div class="overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="video-info">
-                        <h3>Web Development Best Practices</h3>
-                        <p class="channel">TechVlogs</p>
+                        <h3>Paneer Tikka - Appetizer Delight</h3>
+                        <p class="channel">HimaRaj Vlogs</p>
+                        <p class="category"><i class="fas fa-tag"></i> Vegetarian</p>
                         <p class="date">2 days ago</p>
                         <div class="video-stats">
-                            <span><i class="fas fa-eye"></i> 3.2K</span>
-                            <span><i class="fas fa-thumbs-up"></i> 156</span>
+                            <span><i class="fas fa-eye"></i> 45.2K</span>
+                            <span><i class="fas fa-thumbs-up"></i> 2.8K</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="video-card">
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/300x170?text=React+Tutorial" alt="React Tutorial">
-                        <span class="duration">18:32</span>
+                        <img src="https://via.placeholder.com/300x170?text=Biryani" alt="Biryani">
+                        <span class="duration">22:15</span>
                         <div class="overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="video-info">
-                        <h3>React Hooks Explained</h3>
-                        <p class="channel">TechVlogs</p>
+                        <h3>Hyderabadi Biryani Recipe</h3>
+                        <p class="channel">HimaRaj Vlogs</p>
+                        <p class="category"><i class="fas fa-tag"></i> Curries & Gravies</p>
                         <p class="date">5 days ago</p>
                         <div class="video-stats">
-                            <span><i class="fas fa-eye"></i> 5.8K</span>
-                            <span><i class="fas fa-thumbs-up"></i> 342</span>
+                            <span><i class="fas fa-eye"></i> 78.5K</span>
+                            <span><i class="fas fa-thumbs-up"></i> 5.2K</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="video-card">
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/300x170?text=Python+Tips" alt="Python Tips">
-                        <span class="duration">14:20</span>
+                        <img src="https://via.placeholder.com/300x170?text=Samosa" alt="Samosa">
+                        <span class="duration">18:45</span>
                         <div class="overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="video-info">
-                        <h3>Python Tips & Tricks</h3>
-                        <p class="channel">TechVlogs</p>
+                        <h3>Crispy Samosa - Street Food Classic</h3>
+                        <p class="channel">HimaRaj Vlogs</p>
+                        <p class="category"><i class="fas fa-tag"></i> Street Food</p>
                         <p class="date">1 week ago</p>
                         <div class="video-stats">
-                            <span><i class="fas fa-eye"></i> 8.4K</span>
-                            <span><i class="fas fa-thumbs-up"></i> 521</span>
+                            <span><i class="fas fa-eye"></i> 92.3K</span>
+                            <span><i class="fas fa-thumbs-up"></i> 6.1K</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="video-card">
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/300x170?text=CSS+Design" alt="CSS Design">
-                        <span class="duration">16:10</span>
+                        <img src="https://via.placeholder.com/300x170?text=Naan+Bread" alt="Naan Bread">
+                        <span class="duration">12:30</span>
                         <div class="overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="video-info">
-                        <h3>Modern CSS Design Patterns</h3>
-                        <p class="channel">TechVlogs</p>
+                        <h3>Authentic Naan Recipe</h3>
+                        <p class="channel">HimaRaj Vlogs</p>
+                        <p class="category"><i class="fas fa-tag"></i> Breads & Flatbreads</p>
                         <p class="date">1 week ago</p>
                         <div class="video-stats">
-                            <span><i class="fas fa-eye"></i> 4.1K</span>
-                            <span><i class="fas fa-thumbs-up"></i> 287</span>
+                            <span><i class="fas fa-eye"></i> 56.8K</span>
+                            <span><i class="fas fa-thumbs-up"></i> 3.7K</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="video-card">
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/300x170?text=API+Design" alt="API Design">
-                        <span class="duration">20:15</span>
+                        <img src="https://via.placeholder.com/300x170?text=Gulab+Jamun" alt="Gulab Jamun">
+                        <span class="duration">16:20</span>
                         <div class="overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="video-info">
-                        <h3>Building Robust REST APIs</h3>
-                        <p class="channel">TechVlogs</p>
+                        <h3>Gulab Jamun - Sweet Perfection</h3>
+                        <p class="channel">HimaRaj Vlogs</p>
+                        <p class="category"><i class="fas fa-tag"></i> Desserts & Sweets</p>
                         <p class="date">2 weeks ago</p>
                         <div class="video-stats">
-                            <span><i class="fas fa-eye"></i> 6.7K</span>
-                            <span><i class="fas fa-thumbs-up"></i> 412</span>
+                            <span><i class="fas fa-eye"></i> 68.4K</span>
+                            <span><i class="fas fa-thumbs-up"></i> 4.5K</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="video-card">
                     <div class="video-thumbnail">
-                        <img src="https://via.placeholder.com/300x170?text=DevOps" alt="DevOps">
-                        <span class="duration">22:45</span>
+                        <img src="https://via.placeholder.com/300x170?text=Tandoori+Chicken" alt="Tandoori Chicken">
+                        <span class="duration">19:50</span>
                         <div class="overlay">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="video-info">
-                        <h3>DevOps Essentials</h3>
-                        <p class="channel">TechVlogs</p>
+                        <h3>Tandoori Chicken - Non-Vegetarian</h3>
+                        <p class="channel">HimaRaj Vlogs</p>
+                        <p class="category"><i class="fas fa-tag"></i> Non-Vegetarian</p>
                         <p class="date">2 weeks ago</p>
                         <div class="video-stats">
-                            <span><i class="fas fa-eye"></i> 7.2K</span>
-                            <span><i class="fas fa-thumbs-up"></i> 486</span>
+                            <span><i class="fas fa-eye"></i> 85.6K</span>
+                            <span><i class="fas fa-thumbs-up"></i> 5.8K</span>
                         </div>
                     </div>
                 </div>
@@ -200,16 +250,19 @@
                 </div>
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>Hello! I'm a passionate software developer and content creator dedicated to sharing knowledge 
-                       about web development, programming, and technology trends. With over 5 years of experience in 
-                       the tech industry, I love creating educational videos that help others grow their skills.</p>
-                    <p>My channel focuses on practical tutorials, coding best practices, and insights into the latest 
-                       technologies shaping our digital world. Join our community of 50K+ subscribers and start learning today!</p>
+                    <p>Hello! I'm Hima Raj, a passionate food enthusiast and content creator dedicated to sharing 
+                       authentic Indian recipes and culinary techniques. With over 8 years of cooking experience and 
+                       a deep love for traditional Indian cuisine, I create engaging cooking videos that bring the 
+                       flavors of India to your kitchen.</p>
+                    <p>My channel features a wide variety of recipes from curries and breads to street food and desserts. 
+                       Whether you're a beginner or an experienced cook, you'll find delicious recipes and cooking tips 
+                       that will elevate your culinary skills. Join our growing community of 200K+ subscribers who love 
+                       authentic Indian food!</p>
                     <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@HimaRajVlogs" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -219,8 +272,8 @@
     <!-- Newsletter Section -->
     <section class="newsletter">
         <div class="container">
-            <h2>Subscribe to My Newsletter</h2>
-            <p>Get the latest tutorials and tech news delivered to your inbox</p>
+            <h2>Get Weekly Recipes in Your Inbox</h2>
+            <p>Subscribe to get the latest authentic Indian recipes and cooking tips delivered to you</p>
             <form class="newsletter-form">
                 <input type="email" placeholder="Enter your email" required>
                 <button type="submit" class="submit-btn">Subscribe</button>
@@ -231,35 +284,35 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
+            <h2>Recipe Collaboration & Business Inquiries</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email</h3>
-                            <p>contact@techvlogs.com</p>
+                            <p>contact@himarajvlogs.com</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Location</h3>
-                            <p>San Francisco, CA</p>
+                            <p>India</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <p>+91 (555) 123-4567</p>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="6" required></textarea>
+                    <textarea placeholder="Your Message (Recipes, Collaborations, etc.)" rows="6" required></textarea>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
@@ -271,14 +324,15 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>TechVlogs</h3>
-                    <p>Your source for quality tech content and programming tutorials.</p>
+                    <h3>HimaRaj Vlogs</h3>
+                    <p>Your trusted source for authentic Indian recipes and culinary inspiration.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#videos">Recipes</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -286,15 +340,15 @@
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-footer">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@HimaRajVlogs" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 TechVlogs. All rights reserved.</p>
+                <p>&copy; 2026 HimaRaj Vlogs. All rights reserved. | Sharing Authentic Indian Food Culture</p>
             </div>
         </div>
     </footer>
