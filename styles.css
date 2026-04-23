@@ -134,6 +134,8 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .cta-button:hover {
@@ -221,6 +223,11 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--shadow);
+}
+
+.featured-video img {
+    width: 100%;
+    display: block;
 }
 
 .featured-info h3 {
@@ -311,6 +318,8 @@ body {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: inherit;
+    text-decoration: none;
 }
 
 .video-card:hover {
@@ -664,6 +673,19 @@ body {
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
+        position: absolute;
+        top: 72px;
+        right: 20px;
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        gap: 1rem;
+    }
+
+    .nav-menu.open {
+        display: flex;
     }
 
     .hamburger {
