@@ -112,7 +112,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.video-card, .category-card, .about-content, .contact-content').forEach((item) => {
+document.querySelectorAll('.video-card, .category-card, .about-content, .contact-content, .embed-card, .library-copy, .video-player-shell, .video-tabs-panel').forEach((item) => {
     observer.observe(item);
 });
 

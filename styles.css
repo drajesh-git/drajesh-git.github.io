@@ -246,6 +246,10 @@ body {
     color: var(--light-text);
     line-height: 1.6;
 }
+
+.section-link-card {
+    text-decoration: none;
+}
 /* Featured Section */
 .featured {
     padding: 60px 20px;
@@ -532,6 +536,118 @@ body {
 
 .video-tab-note p {
     color: rgba(255, 255, 255, 0.82);
+}
+
+.latest-videos-section {
+    padding: 60px 20px;
+    background-color: #fff8f4;
+}
+
+.latest-videos-section h2,
+.library-section h2 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.embed-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.embed-card {
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.embed-frame {
+    position: relative;
+    padding-top: 56.25%;
+    background-color: #000;
+}
+
+.embed-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed-copy {
+    padding: 22px;
+}
+
+.embed-copy h3 {
+    margin: 14px 0 10px;
+    font-size: 1.3rem;
+}
+
+.embed-copy p {
+    color: var(--light-text);
+}
+
+.library-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.library-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.library-player {
+    position: relative;
+    padding-top: 56.25%;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background-color: #000;
+}
+
+.library-player iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.library-copy {
+    background-color: white;
+    border-radius: 24px;
+    padding: 26px;
+    box-shadow: var(--shadow);
+}
+
+.library-copy h3 {
+    margin: 14px 0 12px;
+    font-size: 1.4rem;
+}
+
+.library-copy p {
+    color: var(--light-text);
+    margin-bottom: 18px;
+}
+
+.feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--text-color);
+}
+
+.feature-list li {
+    padding: 12px 14px;
+    border-radius: 14px;
+    background-color: #fff5f2;
 }
 
 .video-grid {
@@ -1031,8 +1147,15 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .embed-grid,
+    .library-layout {
+        grid-template-columns: 1fr;
+    }
+
     .videos-section h2,
     .featured h2,
+    .latest-videos-section h2,
+    .library-section h2,
     .about h2,
     .contact h2 {
         font-size: 1.5rem;

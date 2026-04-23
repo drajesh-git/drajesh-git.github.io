@@ -19,6 +19,7 @@
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#categories" class="nav-link">Content</a></li>
                 <li><a href="#videos" class="nav-link">Highlights</a></li>
+                <li><a href="#latest-videos" class="nav-link">Latest Videos</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -68,38 +69,28 @@
 
     <section class="categories" id="categories">
         <div class="container">
-            <h2>What You'll See on the Channel</h2>
+            <h2>Watch by Section</h2>
             <div class="category-grid">
-                <div class="category-card">
+                <a class="category-card section-link-card" href="#videos">
                     <i class="fas fa-camera-retro"></i>
-                    <h3>Daily Vlogs</h3>
-                    <p>Simple day-to-day moments shared in a relaxed and personal style.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-route"></i>
-                    <h3>Travel & Trips</h3>
-                    <p>Roadside stops, local places, and fun travel memories worth revisiting.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Family Moments</h3>
-                    <p>Celebrations, casual time together, and memorable scenes from real life.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-bolt"></i>
-                    <h3>Short Videos</h3>
-                    <p>Quick, engaging clips for viewers who love fast and fun updates.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Local Experiences</h3>
-                    <p>Street views, events, and everyday places captured through the vlog lens.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Personal Journey</h3>
-                    <p>A growing archive of experiences, progress, and stories behind the channel.</p>
-                </div>
+                    <h3>Featured Player</h3>
+                    <p>Switch between highlighted uploads and watch them right on this page.</p>
+                </a>
+                <a class="category-card section-link-card" href="#latest-videos">
+                    <i class="fas fa-film"></i>
+                    <h3>Latest Videos</h3>
+                    <p>See the newest public videos in separate embedded sections below.</p>
+                </a>
+                <a class="category-card section-link-card" href="#channel-library">
+                    <i class="fas fa-list"></i>
+                    <h3>Channel Library</h3>
+                    <p>Browse the channel uploads playlist directly from the website.</p>
+                </a>
+                <a class="category-card section-link-card" href="#about">
+                    <i class="fas fa-user"></i>
+                    <h3>About the Vlog</h3>
+                    <p>Learn what HimaRaj Vlogs is about and how the site is organized.</p>
+                </a>
             </div>
         </div>
     </section>
@@ -181,6 +172,69 @@
                         <i class="fas fa-circle-info"></i>
                         <p>These tabs are linked to the public videos currently available on `@HimaRajVlogs`.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-videos-section" id="latest-videos">
+        <div class="container">
+            <h2>Latest Videos</h2>
+            <p class="section-intro">Each upload has its own section here, so the page feels more like a real vlog home with videos built into the content.</p>
+            <div class="embed-grid">
+                <article class="embed-card">
+                    <div class="embed-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/3OvG4TNjiE8"
+                            title="HimaRaj Vlogs latest video 1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="embed-copy">
+                        <span class="category"><i class="fas fa-video"></i> Latest Upload</span>
+                        <h3>Latest Video 1</h3>
+                        <p>Embedded directly on the page so visitors can start watching immediately without any redirect.</p>
+                    </div>
+                </article>
+                <article class="embed-card">
+                    <div class="embed-frame">
+                        <iframe
+                            src="https://www.youtube.com/embed/ZAm3ib-UKUU"
+                            title="HimaRaj Vlogs latest video 2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="embed-copy">
+                        <span class="category"><i class="fas fa-video"></i> Latest Upload</span>
+                        <h3>Latest Video 2</h3>
+                        <p>A second dedicated video section so the site shows real vlog content instead of only static cards.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="library-section" id="channel-library">
+        <div class="container">
+            <h2>Channel Library</h2>
+            <p class="section-intro">This playlist section pulls the public uploads feed into the site, giving visitors a fuller browsing area inside the same page.</p>
+            <div class="library-layout">
+                <div class="library-player">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?list=UUnmvlEAaKWKkg6dMtp0aqdw"
+                        title="HimaRaj Vlogs uploads playlist"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="library-copy">
+                    <span class="category"><i class="fas fa-list"></i> Uploads Playlist</span>
+                    <h3>More videos, same page</h3>
+                    <p>This section is here so the site does not feel like only a brochure. It gives the vlog a real watch area with a playlist visitors can play through on-site.</p>
+                    <ul class="feature-list">
+                        <li>Featured player for quick switching</li>
+                        <li>Separate latest video sections</li>
+                        <li>Uploads playlist embedded on the site</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -271,6 +325,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#categories">Content</a></li>
                         <li><a href="#videos">Highlights</a></li>
+                        <li><a href="#latest-videos">Latest Videos</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
