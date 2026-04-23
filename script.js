@@ -67,6 +67,37 @@ if (contactForm) {
     });
 }
 
+// In-page channel highlights player
+const channelPlayer = document.querySelector('#channel-player');
+const playerTitle = document.querySelector('#player-title');
+const playerDescription = document.querySelector('#player-description');
+const videoTabs = document.querySelectorAll('.video-tab');
+
+if (channelPlayer && videoTabs.length) {
+    videoTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            const videoId = tab.dataset.videoId;
+            const title = tab.dataset.title;
+            const description = tab.dataset.description;
+
+            if (videoId) {
+                channelPlayer.src = `https://www.youtube.com/embed/${videoId}`;
+            }
+
+            if (playerTitle && title) {
+                playerTitle.textContent = title;
+            }
+
+            if (playerDescription && description) {
+                playerDescription.textContent = description;
+            }
+
+            videoTabs.forEach((item) => item.classList.remove('active'));
+            tab.classList.add('active');
+        });
+    });
+}
+
 // Add scroll-in animation
 const observerOptions = {
     threshold: 0.1,
